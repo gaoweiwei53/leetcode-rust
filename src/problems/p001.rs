@@ -38,6 +38,6 @@ mod tests {
     use super::*;
     #[test]
     fn test_two_sum(){
-        assert_eq!(vec![1,1], Solution::two_sum2(vec![3,4,6,7,10], 8));
+        assert_eq!(vec![0,2], Solution::two_sum2(vec![3,4,6,7,10], 9));
     }
 }
