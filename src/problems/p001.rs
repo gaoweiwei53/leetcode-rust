@@ -19,7 +19,6 @@ impl Solution {
     pub fn two_sum2(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut map = HashMap::new();
         for i in 0..nums.len() {
-            // 为什么需要传入引用？
             // if let 是一种模式匹配的写法
             if let Some(k) = map.get(&(target - nums[i])) {
                 return vec![*k as i32,  i as i32];
